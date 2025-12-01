@@ -39,7 +39,7 @@
                 <v-list dense class="mt-7">
                     <v-list-item @click="Logout">
                         <v-list-item-title> -->
-                            <h5 style="margin-left: -25px;" @click="Logout()"><v-icon>mdi-logout</v-icon> LOGOUT</h5>
+                            <!-- <h5 style="margin-left: -25px;" @click="Logout()"><v-icon>mdi-logout</v-icon> LOGOUT</h5> -->
                         <!-- </v-list-item-title>
                     </v-list-item>
                 </v-list>
