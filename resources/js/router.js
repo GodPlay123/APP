@@ -4,7 +4,7 @@ import WorkExperience from './components/WorkExperience.vue';
 import Skills from './components/Skills.vue';
 import Education from './components/Education.vue';
 import Home from './components/Home.vue';
-import Login from './components/Login.vue';
+// import Login from './components/Login.vue';
 
 
 const routes = [
@@ -13,7 +13,7 @@ const routes = [
     { path: '/experience', component: WorkExperience },
     { path: '/skills', component: Skills },
     { path: '/education', component: Education },
-    { path: '/login', component: Login}
+    // { path: '/login', component: Login}
 ];
 
 const router = createRouter({

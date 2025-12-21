@@ -39,6 +39,8 @@ export default {
       { skillsName: "Laravel 8", skillsLevel: "85%",color : "#eebf90" },
       { skillsName: "Laravel 12", skillsLevel: "80%",color : "#eebf90" },
       { skillsName: "Vuetify 2", skillsLevel: "90%",color : "#add8e6" },
+      { skillsName: "MySQL", skillsLevel: "50%",color : "#add8e6" },
+      { skillsName: "VB .NET", skillsLevel: "40%",color : "#add8e6" },
       { skillsName: "GITLAB", skillsLevel: "90%",color : "#eebf90" },
       { skillsName: "RESTful API", skillsLevel: "90%",color : "#eebf90" },
       { skillsName: "EXCEL", skillsLevel: "80%",color : "#90ee90" },
