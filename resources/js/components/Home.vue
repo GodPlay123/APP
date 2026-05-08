@@ -29,7 +29,7 @@
               <td>{{ user.description }}</td>
               <td style="text-align: center;">
                 <v-icon @click="AddUpdate('EDIT',user)" color="blue">mdi-file-edit</v-icon>
-                <v-icon @click="AddUpdateSubmit(user.email)"color="red">mdi-trash-can</v-icon>
+                <v-icon @click="AddUpdateSubmit()"color="red">mdi-trash-can</v-icon>
               </td>
           </tr>
         </tbody>
@@ -145,7 +145,7 @@ export default {
 
     }
 
-    const AddUpdateSubmit = (data) => {
+    const AddUpdateSubmit = () => {
       const selectedRoleObj = roles.find(role => role.rolename === selectedRole.value);
       if(UserTitle.value === 'ADD'){
         
@@ -192,7 +192,7 @@ export default {
           }).catch(err => console.error(err));
       }
       else{
-          axios.put(`http://localhost:8000/api/users/delete?email=${data}`).then(res => {
+          axios.put(`http://localhost:8000/api/users/delete`).then(res => {
               ErrorMessage.value = true
               ErrorDetails.value = res.data
               CloseAddUpdateDialog()
@@ -235,7 +235,7 @@ export default {
 <style scoped>
   table {
     border : 1px solid black;
-    border-collapse : collapse
+    border-collapse : collapse;
   }
   th,tr,td{
     border : 1px solid black;
